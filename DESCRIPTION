@@ -1,0 +1,15 @@
+Package: Berggren
+Title: Determining what gives the best survival chances for Melanoma.
+Version: 0.0.0.9000
+Authors@R: 
+    person("Logan", "Berggren", , "lberggren@usf.edu", role = c("aut", "cre"))
+Description: The data set I'm using is the Melanoma dataset from Rdatasets that focuses on the Survival from Malignant Melanoma and the different factors involved. 
+License: `use_mit_license()`, `use_gpl3_license()','use_CC0_license()'
+Depends: R (>= 3.1.2)
+Imports:
+    ggplot2,
+    dplyr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+LazyData: true
