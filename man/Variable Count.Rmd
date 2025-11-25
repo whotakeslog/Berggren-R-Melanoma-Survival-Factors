@@ -1,0 +1,13 @@
+#This is the variable counts
+
+#VariableCounts <- function(data) {
+#  list(
+#    Sex = count(data, sex),
+#    Age = count(data, age),
+#    Year = count(data, year),
+#    Thickness = count(data, thickness),
+#    Ulcer = count(data, ulcer)
+#  )
+#}
+
+This counts the variables from Melanoma Alive and tells us what the counts are for each. 

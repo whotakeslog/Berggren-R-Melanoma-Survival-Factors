@@ -8,7 +8,8 @@ License: `use_mit_license()`, `use_gpl3_license()','use_CC0_license()'
 Depends: R (>= 3.1.2)
 Imports:
     ggplot2,
-    dplyr
+    dplyr,
+    MASS,
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3

@@ -1,0 +1,49 @@
+---
+title: "Final Project Berggren"
+output: html_document
+date: "2025-11-25"
+---
+
+```{r setup, include=FALSE}
+library(MASS)
+library(ggplot2)
+library(dplyr)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is my final project which focuses on finding Melonama survival factors and what factors provide the greatest rate of survival. The dataset consists of 7 Variables the time which is how long the paitent has lived since getting diagnosed, status whether the patient is alive, dead from melanoma, or dead from other factors, the sex of the patient, their age, the year it took place,the thickness or the ulcer, and whether there was a ulcer.
+
+```{r Melanoma}
+data("Melanoma")
+summary(Melanoma)
+Melanomadata<-Melanoma
+Melanomadata$status <- factor(
+  Melanomadata$status,
+  levels = c(1, 2, 3),
+  labels = c("Alive", "Died from Melanoma", "Died from other causes")
+)
+
+```
+
+## Melanoma Graph
+We see from the graph below that majority of people who have Melanoma die and that about 40% of induviduals with it survive so we will need to narrow down our results to just those who survived. 
+```{r melanoma, echo=FALSE}
+ggplot(Melanomadata,aes(x=status,fill = status))+
+  geom_bar()+
+  labs(title="Graph of patients who had Melanoma and whether they were alive or dead")
+
+```
+## Cleaning data
+```{r Melanoma Alive}
+Melanomadata_Alive <- Melanomadata %>% 
+  filter(status == "Alive")
+```
+## Calculator with Factors
+
+```{r pressure, echo=FALSE}
+calculator
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
