@@ -10,4 +10,5 @@
 #  )
 #}
 
-This counts the variables from Melanoma Alive and tells us what the counts are for each. 
+
+This counts the variables from Melanoma Alive and tells us what the counts are for each. This is done so by induvidually counting each group using the count function.
