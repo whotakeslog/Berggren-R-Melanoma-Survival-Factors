@@ -10,4 +10,5 @@
   
  # return(summary(model))
 #}
-This ranks the survival rates of the Melanoma and can be used with different stats as well.
+
+This ranks the survival rates of the Melanoma and can be used with different stats as well. It does this by seperating the people who survived and the people who died and then uses a model to compare those who survived to all of the different factors.
